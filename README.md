@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+<h1 align="center">React Windbnb Challenge</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+   Solution for this challenge from  <a href="https://www.joeyjenson.com/" target="_blank">Joey Jenson</a>.
+</div>
 
-## Available Scripts
+<div align="center">
+  <h3>
+    <a href="https://jjrock36.github.io/react-windbnb/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/jjrock36/react-windbnb">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- OVERVIEW -->
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![screenshot](./snapShot.png)
 
-### `npm run build`
+Windbnb is a responsive, mock Airbnb website built using React.js and CSS. The application is a simple design with a search/filter modal that filters by a few locations and number of guests.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Making this project took a bit longer than I wanted it to take, but I learned more about context, reusable components, filtering in React, and working with data in React.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/paths/front-end-developer) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `npm run eject`
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://reactjs.org/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Responsive, mobile-first
+- Dynamic properties list
+- Dynamic number of properties
+- Dynamic location list filter
+- Filter by location
+- Filter by number of guests
 
-## Learn More
+## How To Use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
 
-### Code Splitting
+# Install dependencies
+$ npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Run the app
+$ npm start
+```
 
-### Analyzing the Bundle Size
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-### Making a Progressive Web App
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [In-Depth React Tutorial: Build a Hotel Reservation Site](https://www.youtube.com/watch?v=LXJOvkVYQqA)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website [joeyjenson.com](https://www.joeyjenson.com/)
+- GitHub [@jjrock36](https://github.com/jjrock36)
+- Twitter [@jjrock36](https://twitter.com/jjrock36)
