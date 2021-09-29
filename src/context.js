@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import data from './stays.json';
 
 const AppContext = React.createContext();
@@ -11,7 +11,8 @@ const allLocations = [
 ];
 
 const AppProvider = ({ children }) => {
-  const [places, setPlaces] = useState(data);
+  const [places] = useState(data);
+  const [sortedPlaces, setSortedPlaces] = useState(places);
   const [locations] = useState(allLocations);
   const [showModal, setShowModal] = useState(false);
   const [filterType, setFilterType] = useState('location');
@@ -30,29 +31,39 @@ const AppProvider = ({ children }) => {
     setFilterType(e.target.id);
   };
   const handleLocation = (e) => {
-    setCurrentLocation(e.target.id);
+    if (e.target.id === 'clear') {
+      setCurrentLocation('');
+      setSortedPlaces(places);
+    } else {
+      setCurrentLocation(e.target.id);
+    }
   };
   const handleNumGuests = (newNumGuests) => {
     setNumGuests(newNumGuests);
   };
   const handleFilter = () => {
-    const currentCity = currentLocation.split(',')[0];
-    const newPlaces = places.filter(
-      (place) => place.maxGuests >= numGuests && place.city === currentCity
-    );
-    setPlaces(newPlaces);
+    let newPlaces = [...places];
+    let currentCity = currentLocation.split(',')[0];
+
+    // filter by guests
+    if (numGuests > 0) {
+      newPlaces = newPlaces.filter((place) => place.maxGuests >= numGuests);
+    }
+    // filter by location
+    if (currentCity) {
+      newPlaces = newPlaces.filter((place) => place.city === currentCity);
+    }
+
+    setSortedPlaces(newPlaces);
+    console.log(currentCity);
     setShowModal(false);
   };
-
-  // useEffect(() => {
-  //   setPlaces(data);
-  //   setNumGuests(0);
-  // }, [handleShowModal])
 
   return (
     <AppContext.Provider
       value={{
         places,
+        sortedPlaces,
         locations,
         showModal,
         handleShowModal,

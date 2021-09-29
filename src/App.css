@@ -143,14 +143,23 @@ img {
 .location-icon {
   color: var(--gray-4);
 }
-.search-icon {
-}
 .minus-icon,
 .plus-icon {
   font-size: 1rem;
   color: var(--gray-3);
   border: 1px solid var(--gray-3);
   border-radius: var(--radius-sm);
+}
+.star-icon:hover,
+.location-icon:hover,
+.search-icon:hover,
+.minus-icon:hover,
+.plus-icon:hover,
+.searchbar-btn:hover,
+.submit-btn:hover,
+.close-btn:hover,
+.location-text:hover {
+  cursor: pointer;
 }
 /* App Styling */
 
@@ -205,6 +214,7 @@ img {
 .guests:hover,
 .location:hover {
   color: var(--gray-1);
+  cursor: pointer;
 }
 @media screen and (min-width: 800px) {
   .header {
@@ -377,6 +387,19 @@ img {
   flex-direction: row;
   margin: 2rem 0;
   padding: 0 1.25rem;
+}
+.clear-location-container {
+  margin-top: 3.25rem;
+}
+.clear-location {
+  margin: 0 2.5rem;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--primary-font);
+}
+.clear-location:hover {
+  border: 1px solid var(--gray-1);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
 }
 /* guest */
 .adult-container,
