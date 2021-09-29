@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import data from './stays.json';
 
 const AppContext = React.createContext();
@@ -11,7 +11,7 @@ const allLocations = [
 ];
 
 const AppProvider = ({ children }) => {
-  const [places, setPlaces] = useState(data);
+  const [places] = useState(data);
   const [sortedPlaces, setSortedPlaces] = useState(places);
   const [locations] = useState(allLocations);
   const [showModal, setShowModal] = useState(false);
