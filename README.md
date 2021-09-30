@@ -34,7 +34,7 @@
 
 ## Overview
 
-![screenshot](snapShot.png)
+![screenshot](./src/snapShot.png)
 
 Windbnb is a responsive, mock Airbnb website built using React.js and CSS. The application is a simple design with a search/filter modal that filters by a few locations and number of guests.
 
